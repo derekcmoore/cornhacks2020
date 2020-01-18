@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { QuestionOneIComponent } from './components/individual/question-one-i/question-one-i.component';
 import { QuestionOneBComponent } from './components/businesses/question-one-b/question-one-b.component';
+import { StarterQuestionComponent } from './components/starter-question/starter-question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionnaireComponent,
     QuestionOneIComponent,
-    QuestionOneBComponent
+    QuestionOneBComponent,
+    StarterQuestionComponent
   ],
   imports: [
     BrowserModule,
