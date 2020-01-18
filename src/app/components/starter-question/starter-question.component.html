@@ -1,1 +1,33 @@
-<p>starter-question works!</p>
+<div class="question-box">
+    <div>
+        <button class="button-primary">Individual</button>
+        <button class="button-primary">Business</button>
+    </div>
+    <div class="question-progress">
+        <ul class="clr-timeline clr-timeline-horizontal">
+            <li class="clr-timeline-step disabled">
+                <clr-icon shape="circle" aria-label="Not started"></clr-icon>
+                <div class="clr-timeline-step-body">
+                </div>
+            </li>
+            <li class="clr-timeline-step">
+                <clr-icon shape="dot-circle" aria-current="true" aria-label="Current"></clr-icon>
+                <div class="clr-timeline-step-body">
+                </div>
+            </li>
+            <li class="clr-timeline-step">
+                <clr-spinner clrMedium aria-label="In progress">Fetching data</clr-spinner>
+                <div class="clr-timeline-step-body">
+                </div>
+            </li>
+            <li class="clr-timeline-step">
+                <clr-icon shape="success-standard" aria-label="Completed"></clr-icon>
+                <div class="clr-timeline-step-body">
+                </div>
+            </li>
+            <li class="clr-timeline-step">
+                <clr-icon shape="error-standard" aria-label="Error"></clr-icon>
+            </li>
+        </ul>
+    </div>
+</div>

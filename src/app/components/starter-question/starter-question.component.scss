@@ -1,0 +1,23 @@
+@import "../../app.component.scss";
+
+.button-primary {
+    min-width: 2em;
+    max-width: 10em;
+    padding-left:1em;
+    padding-right:1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    max-height: 10em;
+    font-size: 40px;
+    background-color: $secondary-color !important;
+    border: 1px solid $secondary-color !important;
+    border-radius: 0.3em;
+    margin: 0.5em;
+    outline: none !important;
+    color: white;
+}
+
+.button-primary:active{
+    background-color: #ffb648 !important;
+    border: 1px solid #ffb648 !important;
+}
