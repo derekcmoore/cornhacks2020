@@ -13,7 +13,7 @@ export class QuestionnaireComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
+    this.themeService.setLightTheme();
   }
 
   toggleTheme() {
