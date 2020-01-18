@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemeService } from "../../theme.service";
-import { StarterQuestionComponent } from '../../components/starter-question/starter-question.component'
+import { QuestionsComponent } from '../../components/questions/questions.component'
 @Component({
   selector: 'app-questionnaire',
   templateUrl: './questionnaire.component.html',

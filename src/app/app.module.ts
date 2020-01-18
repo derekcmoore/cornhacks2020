@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
 import { QuestionOneIComponent } from './components/individual/question-one-i/question-one-i.component';
 import { QuestionOneBComponent } from './components/businesses/question-one-b/question-one-b.component';
-import { StarterQuestionComponent } from './components/starter-question/starter-question.component';
+import { QuestionsComponent } from './components/questions/questions.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -16,7 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     QuestionnaireComponent,
     QuestionOneIComponent,
     QuestionOneBComponent,
-    StarterQuestionComponent
+    QuestionsComponent
   ],
   imports: [
     BrowserModule,

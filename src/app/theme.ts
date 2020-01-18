@@ -51,9 +51,9 @@ export const dark: Theme = {
         "--background-tertiary": "#08090A",
         "--background-light": "#41474D",
 
-        "--primary-default": "#5DFDCB",
-        "--primary-dark": "#24B286",
-        "--primary-light": "#B2FFE7",
+        "--primary-default": "#33cc33",
+        "--primary-dark": "#33cc33",
+        "--primary-light": "#33cc33",
 
         "--secondary-default": "#ff9900",
         "--secondary-dark": "#ff9900",
