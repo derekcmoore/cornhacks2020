@@ -1,4 +1,4 @@
-@import "../../app.component.scss";
+@import "../../../app.component.scss";
 
 #user-type-selection {
     display: inline-flex;
@@ -7,10 +7,6 @@
 .button-primary {
     min-width: 2em;
     max-width: 10em;
-    padding-left:1em;
-    padding-right:1em;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
     max-height: 10em;
     font-size: 40px;
     text-align: center;
@@ -24,6 +20,11 @@
     transition: .5s ease-in-out all;
     opacity: 65%;
     cursor: pointer;
+}
+
+.button-text {
+    line-height: normal;
+    padding: 0.3em;
 }
 
 .button-primary div{

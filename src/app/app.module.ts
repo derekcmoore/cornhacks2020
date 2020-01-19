@@ -4,8 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuestionnaireComponent } from './pages/questionnaire/questionnaire.component';
-import { QuestionOneBComponent } from './components/businesses/question-one-b/question-one-b.component';
-import { QuestionsComponent } from './components/questions/questions.component';
+import { QuestionsComponent } from './components/questions/question-window/questions.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Question1IComponent } from './components/questions/question1-i/question1-i.component';
@@ -24,7 +23,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [
     AppComponent,
     QuestionnaireComponent,
-    QuestionOneBComponent,
     QuestionsComponent,
     Question1IComponent,
     Question2IComponent,
