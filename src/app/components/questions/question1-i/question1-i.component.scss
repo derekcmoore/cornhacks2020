@@ -1,1 +1,44 @@
 @import "../../../app.component.scss";
+
+.button-company {
+    min-width: 2em;
+    width: 100%;
+    max-width: 10em;
+    max-height: 10em;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    margin: 0.5em;
+    outline: none !important;
+    color: $primary-color;
+    background-color: white !important;
+    border: 3px solid $primary-color !important;
+    transition: .5s ease-in-out all;
+    opacity: 65%;
+    cursor: pointer;
+}
+
+.button-text {
+    line-height: normal;
+    padding: 0.3em;
+}
+
+.button-company div{
+    margin: 1em;
+}
+
+.button-subtext {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+fa-icon {
+    font-size: 1.5em;
+}
+
+.button-company:hover {
+    background-color: var(--primary-default) !important;
+    border: 1px solid var(--primary-default) !important;
+    color: white;
+}

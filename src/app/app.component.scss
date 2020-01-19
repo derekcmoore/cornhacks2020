@@ -4,7 +4,8 @@ $tertiary-color: var(--tertiary-default);
 $question-background: var(--background-secondary);
 
 .question {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
+  line-height: normal;
   font-family: "Noah";
   color: black;
   font-size: 50px;
@@ -59,3 +60,4 @@ $question-background: var(--background-secondary);
   max-width: 7em;
   width: 100%;
 }
+

@@ -8,7 +8,6 @@ import { faBuilding, faUser } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./questions.component.scss']
 })
 export class QuestionsComponent implements OnInit {
-  public questionNumber: number = 0;
   public isBusiness: boolean = false;
   faBuilding = faBuilding;
   faUser = faUser;
@@ -19,10 +18,10 @@ export class QuestionsComponent implements OnInit {
   }
 
   addQuestionNumber() {
-    this.questionNumber++;
+    this.questionsService.questionNumber++;
   }
 
   subtractQuestionNumber() {
-    this.questionNumber--;
+    this.questionsService.questionNumber--;
   }
 }

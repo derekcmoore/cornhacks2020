@@ -4,6 +4,7 @@ import { Injectable } from "@angular/core";
   providedIn: "root"
 })
 export class QuestionsService {
+  public questionNumber = 0;
   public answers = {
     q1: null,
     q2: null,
@@ -16,8 +17,4 @@ export class QuestionsService {
     q9: null,
     q10: null
   };
-
-  setAnswer(question: number, answer: string) {
-    this.answers['q' + question] = answer;
-  }
 }
