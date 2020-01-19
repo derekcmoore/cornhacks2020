@@ -15,19 +15,11 @@ export class SearchComponent implements OnInit {
   };
 
   constructor(private http: HttpClient) {
-    this.http.get(this.urll, this.httpOptions).subscribe(x => {
-      console.log(x);
-      console.log('kkjnjnjknkjnjknjknjkn');
-    });
-    console.log('llllllllllllllllll');
   }
 
   ngOnInit() {
     this.http.get(this.urll, this.httpOptions).subscribe(x => {
-      console.log(x);
-      console.log('kkjnjnjknkjnjknjknjkn');
     });
-    console.log('llllllllllllllllll');
   }
 
 }
