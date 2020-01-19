@@ -6,7 +6,7 @@ $question-background: var(--background-secondary);
 .question {
   padding-bottom: 1em;
   line-height: normal;
-  font-family: "Noah";
+  font-family: "Open Sans", sans-serif;
   color: black;
   font-size: 50px;
 }
@@ -18,13 +18,15 @@ $question-background: var(--background-secondary);
   align-items: center;
   justify-content: center;
   height: 68%;
-  background-color: $question-background;  
+  background-color: $question-background;
   margin-left: 5em;
   margin-right: 5em;
   border-radius: 0.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   text-align: center;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
 }
 
 .center-box {
@@ -72,6 +74,7 @@ $question-background: var(--background-secondary);
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
+  font-weight: 400;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

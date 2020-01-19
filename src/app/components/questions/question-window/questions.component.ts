@@ -18,6 +18,7 @@ export class QuestionsComponent implements OnInit {
   }
 
   addQuestionNumber() {
+    console.log(this.questionsService.answers);
     this.questionsService.questionNumber++;
   }
 

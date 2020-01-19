@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionsService } from 'src/app/services/questions/questions.service';
 
 @Component({
   selector: 'app-question7-i',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./question7-i.component.scss']
 })
 export class Question7IComponent implements OnInit {
-
-  constructor() { }
+  slider: HTMLElement = document.getElementById("myRange");
+  output: HTMLElement = document.getElementById("demo");
+  constructor(private questionsService: QuestionsService) { }
 
   ngOnInit() {
   }
 
+  valueChanged(value: number) {
+    this.questionsService.answers['q7'] = value;
+  }
 }

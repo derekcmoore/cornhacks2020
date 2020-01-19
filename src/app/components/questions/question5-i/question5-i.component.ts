@@ -20,6 +20,5 @@ export class Question5IComponent implements OnInit {
     else {
       this.questionsService.answers['q5'] = "Yes";
     }
-    console.log(this.questionsService.answers);
   }
 }

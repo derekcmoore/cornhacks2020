@@ -12,9 +12,7 @@ export class QuestionsService {
     q4: null,
     q5: null,
     q6: null,
-    q7: null,
-    q8: null,
-    q9: null,
-    q10: null
+    q7: 0,
+    q8: null
   };
 }
