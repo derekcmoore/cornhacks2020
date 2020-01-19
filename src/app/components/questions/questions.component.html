@@ -1,36 +1,50 @@
-<div class="question-box">
-    <div class="question">
-        Who is this for?
+<div>
+    <div *ngIf="questionNumber == 0" class="question-box">
+        <div class="question">
+            Who is this for?
+        </div>
+        <div>
+            <button class="button-primary" (click)="isBusiness = false; addQuestionNumber()">Individual</button>
+            <button class="button-primary" (click)="isBusiness = true; addQuestionNumber()">Business</button>
+        </div>
     </div>
-    <div>
-        <button class="button-primary">Individual</button>
-        <button class="button-primary">Business</button>
-    </div>
-    <div class="question-progress">
-        <ul class="clr-timeline clr-timeline-horizontal">
-            <li class="clr-timeline-step disabled">
-                <clr-icon shape="circle" aria-label="Not started"></clr-icon>
-                <div class="clr-timeline-step-body">
-                </div>
-            </li>
-            <li class="clr-timeline-step">
-                <clr-icon shape="dot-circle" aria-current="true" aria-label="Current"></clr-icon>
-                <div class="clr-timeline-step-body">
-                </div>
-            </li>
-            <li class="clr-timeline-step">
-                <clr-spinner clrMedium aria-label="In progress">Fetching data</clr-spinner>
-                <div class="clr-timeline-step-body">
-                </div>
-            </li>
-            <li class="clr-timeline-step">
-                <clr-icon shape="success-standard" aria-label="Completed"></clr-icon>
-                <div class="clr-timeline-step-body">
-                </div>
-            </li>
-            <li class="clr-timeline-step">
-                <clr-icon shape="error-standard" aria-label="Error"></clr-icon>
-            </li>
-        </ul>
+
+    <div *ngIf="questionNumber != 0 && isBusiness" class="question-box">
+        <div>
+        </div>
+        <div class="question-progress">
+            <button (click)="subtractQuestionNumber()">back</button>
+            <ul class="clr-timeline clr-timeline-horizontal">
+                <li class="clr-timeline-step">
+                    <clr-icon *ngIf="questionNumber == 1" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 1" shape="circle"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step">
+                    <clr-icon *ngIf="questionNumber == 2" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 2" shape="circle"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step">
+                    <clr-icon *ngIf="questionNumber == 3" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 3" shape="circle"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step">
+                    <clr-icon *ngIf="questionNumber == 4" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 4" shape="circle"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step">
+                    <clr-icon *ngIf="questionNumber == 5" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 5" shape="circle"></clr-icon>
+                </li>
+            </ul>
+            <button (click)="addQuestionNumber()">next</button>
+        </div>
     </div>
 </div>

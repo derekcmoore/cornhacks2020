@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./questions.component.scss']
 })
 export class QuestionsComponent implements OnInit {
-
+  public questionNumber: number = 0;
+  public isBusiness: boolean = false;
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  addQuestionNumber(){
+    this.questionNumber++;
+  }
+
+  subtractQuestionNumber() {
+    this.questionNumber--;
   }
 
 }
