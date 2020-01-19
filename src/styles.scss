@@ -6,7 +6,8 @@
 //       format("woff"),
 //     url("./assets/fonts/Fontfabric\ -\ Noah\ Regular.otf") format("opentype");
 // }
-$background-image: var(--background-image);
+@import '../src/app/app.component.scss';
+
 html,
 body {
   color: var(--foreground-default);

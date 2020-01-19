@@ -1,0 +1,14 @@
+<body>
+  <h1 id="title">Sustainable Product Search</h1>
+  <span>
+
+    <input placeholder="Search" [(ngModel)]="searchText" (keyup)="showResults($event)" class="search-bar" />
+  </span>
+  <p *ngFor="let item of items" class="item-card">
+    <a [href]="item.link">
+      <img [src]="item.pagemap.scraped ? item.pagemap.scraped[0].image_link : '../../../assets/images/beanstalk.png'"
+        height="100px" />
+      {{item.title}}
+    </a>
+  </p>
+</body>

@@ -15,13 +15,16 @@ import { Question5IComponent } from './components/questions/question5-i/question
 import { Question6IComponent } from './components/questions/question6-i/question6-i.component';
 import { Question7IComponent } from './components/questions/question7-i/question7-i.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {HttpClientModule} from "@angular/common/http";
 import { Question8IComponent } from './components/questions/question8-i/question8-i.component';
 import { FormsModule } from '@angular/forms';
 import { SurveyResultsComponent } from './pages/survey-results/survey-results.component';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SearchComponent,
     QuestionnaireComponent,
     QuestionsComponent,
     Question1IComponent,
@@ -36,6 +39,7 @@ import { SurveyResultsComponent } from './pages/survey-results/survey-results.co
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     ClarityModule,
     BrowserAnimationsModule,
