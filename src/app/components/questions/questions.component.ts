@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionsService } from 'src/app/services/questions/questions.service';
 
 @Component({
   selector: 'app-questions',
@@ -8,18 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class QuestionsComponent implements OnInit {
   public questionNumber: number = 0;
   public isBusiness: boolean = false;
-  constructor() { }
+  constructor(private questionsService: QuestionsService) { }
 
   ngOnInit() {
-
+    
   }
 
-  addQuestionNumber(){
+  addQuestionNumber() {
     this.questionNumber++;
   }
 
   subtractQuestionNumber() {
     this.questionNumber--;
   }
-
 }

@@ -49,40 +49,91 @@
         </div>
     </div>
 
-    <div *ngIf="questionNumber != 0 && isBusiness" class="question-box">
+    <div *ngIf="questionNumber != 0 && !isBusiness" class="question-box">
         <div>
-
+            <app-question1-i *ngIf="questionNumber == 1"></app-question1-i>
+            <app-question2-i *ngIf="questionNumber == 2"></app-question2-i>
+            <app-question3-i *ngIf="questionNumber == 3"></app-question3-i>
+            <app-question4-i *ngIf="questionNumber == 4"></app-question4-i>
+            <app-question5-i *ngIf="questionNumber == 5"></app-question5-i>
+            <app-question6-i *ngIf="questionNumber == 6"></app-question6-i>
+            <app-question7-i *ngIf="questionNumber == 7"></app-question7-i>
+            <app-question8-i *ngIf="questionNumber == 8"></app-question8-i>
+            <app-question9-i *ngIf="questionNumber == 9"></app-question9-i>
+            <app-question10-i *ngIf="questionNumber == 10"></app-question10-i>
         </div>
         <div class="question-progress">
             <button (click)="subtractQuestionNumber()">back</button>
             <ul class="clr-timeline clr-timeline-horizontal">
-                <li class="clr-timeline-step">
+                <li class="clr-timeline-step" (click)="questionNumber = 1">
                     <clr-icon *ngIf="questionNumber == 1" shape="dot-circle"></clr-icon>
-                    <clr-icon *ngIf="questionNumber != 1" shape="circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 1 && !questionsService.answers['q1']" shape="circle"></clr-icon>
+                    <clr-icon shape="success-standard" *ngIf="questionNumber != 1 && questionsService.answers['q1']"></clr-icon>
                     <div class="clr-timeline-step-body">
                     </div>
                 </li>
-                <li class="clr-timeline-step">
+                <li class="clr-timeline-step" (click)="questionNumber = 2">
                     <clr-icon *ngIf="questionNumber == 2" shape="dot-circle"></clr-icon>
-                    <clr-icon *ngIf="questionNumber != 2" shape="circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 2 && !questionsService.answers['q2']" shape="circle"></clr-icon>
+                    <clr-icon shape="success-standard" *ngIf="questionNumber != 2 && questionsService.answers['q2']"></clr-icon>
                     <div class="clr-timeline-step-body">
                     </div>
                 </li>
-                <li class="clr-timeline-step">
+                <li class="clr-timeline-step" (click)="questionNumber = 3">
                     <clr-icon *ngIf="questionNumber == 3" shape="dot-circle"></clr-icon>
-                    <clr-icon *ngIf="questionNumber != 3" shape="circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 3 && !questionsService.answers['q3']" shape="circle"></clr-icon>
+                    <clr-icon shape="success-standard" *ngIf="questionNumber != 3 && questionsService.answers['q3']"></clr-icon>
                     <div class="clr-timeline-step-body">
                     </div>
                 </li>
-                <li class="clr-timeline-step">
+                <li class="clr-timeline-step" (click)="questionNumber = 4">
                     <clr-icon *ngIf="questionNumber == 4" shape="dot-circle"></clr-icon>
-                    <clr-icon *ngIf="questionNumber != 4" shape="circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 4 && !questionsService.answers['q4']" shape="circle"></clr-icon>
+                    <clr-icon shape="success-standard" *ngIf="questionNumber != 4 && questionsService.answers['q4']"></clr-icon>
                     <div class="clr-timeline-step-body">
                     </div>
                 </li>
-                <li class="clr-timeline-step">
+                <li class="clr-timeline-step" (click)="questionNumber = 5">
                     <clr-icon *ngIf="questionNumber == 5" shape="dot-circle"></clr-icon>
-                    <clr-icon *ngIf="questionNumber != 5" shape="circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 5 && !questionsService.answers['q5']" shape="circle"></clr-icon>
+                    <clr-icon shape="success-standard" *ngIf="questionNumber != 5 && questionsService.answers['q5']"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step" (click)="questionNumber = 6">
+                    <clr-icon *ngIf="questionNumber == 6" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 6 && !questionsService.answers['q6']" shape="circle"></clr-icon>
+                    <clr-icon shape="success-standard" *ngIf="questionNumber != 6 && questionsService.answers['q6']"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step" (click)="questionNumber = 7">
+                    <clr-icon *ngIf="questionNumber == 7" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 7 && !questionsService.answers['q7']" shape="circle"></clr-icon>
+                    <clr-icon shape="success-standard" *ngIf="questionNumber != 7 && questionsService.answers['q7']"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step" (click)="questionNumber = 8">
+                    <clr-icon *ngIf="questionNumber == 8" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 8 && !questionsService.answers['q8']" shape="circle"></clr-icon>
+                    <clr-icon shape="success-standard" *ngIf="questionNumber != 8 && questionsService.answers['q8']"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step" (click)="questionNumber = 9">
+                    <clr-icon *ngIf="questionNumber == 9" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 9 && !questionsService.answers['q9']" shape="circle"></clr-icon>
+                    <clr-icon shape="success-standard" *ngIf="questionNumber != 9 && questionsService.answers['q9']"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step" (click)="questionNumber = 10">
+                    <clr-icon *ngIf="questionNumber == 10" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 10 && !questionsService.answers['q10']" shape="circle"></clr-icon>
+                    <clr-icon shape="success-standard" *ngIf="questionNumber != 10 && questionsService.answers['q10']"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
                 </li>
             </ul>
             <button (click)="addQuestionNumber()">next</button>
