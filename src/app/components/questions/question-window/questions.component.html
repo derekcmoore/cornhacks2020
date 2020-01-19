@@ -35,8 +35,6 @@
             <app-question6-i *ngIf="questionsService.questionNumber== 6"></app-question6-i>
             <app-question7-i *ngIf="questionsService.questionNumber== 7"></app-question7-i>
             <app-question8-i *ngIf="questionsService.questionNumber== 8"></app-question8-i>
-            <app-question9-i *ngIf="questionsService.questionNumber== 9"></app-question9-i>
-            <app-question10-i *ngIf="questionsService.questionNumber== 10"></app-question10-i>
         </div>
         <div class="question-progress">
             <button (click)="subtractQuestionNumber()">back</button>
@@ -113,26 +111,8 @@
                     <div class="clr-timeline-step-body">
                     </div>
                 </li>
-                <li class="clr-timeline-step" (click)="questionsService.questionNumber= 9">
-                    <clr-icon *ngIf="questionsService.questionNumber== 9" shape="dot-circle" class="progress-color"></clr-icon>
-                    <clr-icon *ngIf="questionsService.questionNumber!= 9 && !questionsService.answers['q9']" shape="circle">
-                    </clr-icon>
-                    <clr-icon shape="success-standard" *ngIf="questionsService.questionNumber!= 9 && questionsService.answers['q9']">
-                    </clr-icon>
-                    <div class="clr-timeline-step-body">
-                    </div>
-                </li>
-                <li class="clr-timeline-step" (click)="questionsService.questionNumber= 10">
-                    <clr-icon *ngIf="questionsService.questionNumber== 10" shape="dot-circle" class="progress-color"></clr-icon>
-                    <clr-icon *ngIf="questionsService.questionNumber!= 10 && !questionsService.answers['q10']" shape="circle">
-                    </clr-icon>
-                    <clr-icon shape="success-standard" *ngIf="questionsService.questionNumber!= 10 && questionsService.answers['q10']">
-                    </clr-icon>
-                    <div class="clr-timeline-step-body">
-                    </div>
-                </li>
             </ul>
-            <button *ngIf="questionsService.questionNumber> 1" (click)="addquestionsService.questionNumber()">next</button>
+            <button *ngIf="questionsService.questionNumber > 1" (click)="addQuestionNumber()">next</button>
         </div>
     </div>
 </div>

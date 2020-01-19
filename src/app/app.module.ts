@@ -14,10 +14,8 @@ import { Question4IComponent } from './components/questions/question4-i/question
 import { Question5IComponent } from './components/questions/question5-i/question5-i.component';
 import { Question6IComponent } from './components/questions/question6-i/question6-i.component';
 import { Question7IComponent } from './components/questions/question7-i/question7-i.component';
-import { Question8IComponent } from './components/questions/question8-i/question8-i.component';
-import { Question9IComponent } from './components/questions/question9-i/question9-i.component';
-import { Question10IComponent } from './components/questions/question10-i/question10-i.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Question8IComponent } from './components/questions/question8-i/question8-i.component';
 
 @NgModule({
   declarations: [
@@ -31,9 +29,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     Question5IComponent,
     Question6IComponent,
     Question7IComponent,
-    Question8IComponent,
-    Question9IComponent,
-    Question10IComponent,
+    Question8IComponent
   ],
   imports: [
     BrowserModule,

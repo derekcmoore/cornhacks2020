@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionsService } from 'src/app/services/questions/questions.service';
 
 @Component({
   selector: 'app-question5-i',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Question5IComponent implements OnInit {
 
-  constructor() { }
+  constructor(private questionsService: QuestionsService) { }
 
   ngOnInit() {
   }
 
+  choice(value: number) {
+    if (value == 0) {
+      this.questionsService.answers['q5'] = "No";
+    }
+    else {
+      this.questionsService.answers['q5'] = "Yes";
+    }
+    console.log(this.questionsService.answers);
+  }
 }

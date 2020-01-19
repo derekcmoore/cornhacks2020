@@ -15,6 +15,12 @@ export class Question2IComponent implements OnInit {
   }
 
   choice(value: number) {
-    this.questionsService.answers['q2'] = "test";
+    if (value == 0) {
+      this.questionsService.answers['q2'] = "No";
+    }
+    else {
+      this.questionsService.answers['q2'] = "Yes";
+    }
+    console.log(this.questionsService.answers);
   }
 }
