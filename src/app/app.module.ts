@@ -18,6 +18,8 @@ import { Question7IComponent } from './components/individual/question7-i/questio
 import { Question8IComponent } from './components/individual/question8-i/question8-i.component';
 import { Question9IComponent } from './components/individual/question9-i/question9-i.component';
 import { Question10IComponent } from './components/individual/question10-i/question10-i.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +41,8 @@ import { Question10IComponent } from './components/individual/question10-i/quest
     BrowserModule,
     AppRoutingModule,
     ClarityModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

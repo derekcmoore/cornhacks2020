@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 // @font-face {
 //   font-family: "Noah";
 //   src: url("./assets/fonts/fontfabric_-_noah_regular-webfont.woff")
@@ -13,6 +12,5 @@ body {
   color: var(--foreground-default);
   background-color: var(--background-default);
   height: 100vh;
+  background: url("../src/assets/images/beanstalk.png");
 }
-
-

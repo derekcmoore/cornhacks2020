@@ -17,7 +17,7 @@ $question-background: var(--background-secondary);
   align-items: center;
   justify-content: center;
   height: 68%;
-  background-color: $question-background;
+  background-color: $question-background;  
   margin-left: 5em;
   margin-right: 5em;
   border-radius: 0.5em;
@@ -26,11 +26,32 @@ $question-background: var(--background-secondary);
   text-align: center;
 }
 
+.center-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 68%;
+  margin-left: 5em;
+  margin-right: 5em;
+  border-radius: 0.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+
 .question-progress {
   position: absolute;
   bottom: 0;
   vertical-align: bottom;
   display: flex;
+  margin-bottom: 1em;
+}
+
+.progress-color {
+  fill: $secondary-color;
 }
 
 .clr-timeline-step {

@@ -13,13 +13,13 @@ export const light: Theme = {
         "--foreground-light": "#41474D",
 
         "--background-default": "#F4FAFF",
-        "--background-secondary": "#f5f5f5",
+        "--background-secondary": "#dbdbdb75",
         "--background-tertiary": "#5C7D99",
         "--background-light": "#FFFFFF",
 
-        "--primary-default": "#33cc33",
-        "--primary-dark": "#33cc33",
-        "--primary-light": "#33cc33",
+        "--primary-default": "#32a852",
+        "--primary-dark": "#24B286",
+        "--primary-light": "#B2FFE7",
 
         "--secondary-default": "#ff9900",
         "--secondary-dark": "#ff9900",
