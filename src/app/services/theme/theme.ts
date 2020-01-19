@@ -18,8 +18,8 @@ export const light: Theme = {
         "--background-light": "#FFFFFF",
 
         "--primary-default": "#32a852",
-        "--primary-dark": "#24B286",
-        "--primary-light": "#B2FFE7",
+        "--primary-dark": "#32a852",
+        "--primary-light": "#32a852",
 
         "--secondary-default": "#ff9900",
         "--secondary-dark": "#ff9900",
@@ -46,14 +46,14 @@ export const dark: Theme = {
         "--foreground-quaternary": "#E5E5E5",
         "--foreground-light": "#FFFFFF",
 
-        "--background-default": "#797C80",
+        "--background-default": "#0e0e0f",
         "--background-secondary": "#41474D",
         "--background-tertiary": "#08090A",
         "--background-light": "#41474D",
 
-        "--primary-default": "#33cc33",
-        "--primary-dark": "#33cc33",
-        "--primary-light": "#33cc33",
+        "--primary-default": "#32a852",
+        "--primary-dark": "#32a852",
+        "--primary-light": "#32a852",
 
         "--secondary-default": "#ff9900",
         "--secondary-dark": "#ff9900",
