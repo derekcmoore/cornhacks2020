@@ -67,7 +67,7 @@ export const dark: Theme = {
         "--error-dark": "#800600",
         "--error-light": "#FFCECC",
 
-        "--background-image": "url('../../../assets/images/beanstalk-dark.png')",
+        "--background-image": "url('../../../assets/images/beanstalk-dark.jpg')",
         "--background-tertiary-shadow": "0 1px 3px 0 rgba(8, 9, 10, 0.5)"
     }
 };
