@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { QuestionsService } from 'src/app/services/questions/questions.service';
-import { faBuilding, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBuilding, faUser, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-questions',
@@ -11,8 +11,10 @@ export class QuestionsComponent implements OnInit {
   public isBusiness: boolean = false;
   faBuilding = faBuilding;
   faUser = faUser;
-  constructor(private questionsService: QuestionsService) { }
-
+  faArrowLeft = faArrowLeft;
+  faArrowRight = faArrowRight;
+  nextButton = false;
+  constructor(private questionsService: QuestionsService) {}
   ngOnInit() {
     
   }
