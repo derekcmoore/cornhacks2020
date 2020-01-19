@@ -1,23 +1,42 @@
 <div>
     <div class="question">
-        Question?
+        How Large is your organization?
     </div>
-    <div>
-        <clr-radio-wrapper>
-            <input type="radio" clrRadio value="option1" name="options" (click)="choice(1)"/>
-            <label>Option 1</label>
-        </clr-radio-wrapper>
-        <clr-radio-wrapper>
-            <input type="radio" clrRadio value="option2" name="options" (click)="choice(2)"/>
-            <label>Option 2</label>
-        </clr-radio-wrapper>
-        <clr-radio-wrapper>
-            <input type="radio" clrRadio value="option1" name="options" (click)="choice(3)" />
-            <label>Option 3</label>
-        </clr-radio-wrapper>
-        <clr-radio-wrapper>
-            <input type="radio" clrRadio value="option2" name="options" (click)="choice(4)" />
-            <label>Option 4</label>
-        </clr-radio-wrapper>
-    </div>
+    <form clrForm>
+        <div id="user-type-selection">
+            <div class="button-company" (click)="choice(0)">
+                <div class="button-text">
+                    Small
+                </div>
+                <div>
+                    <fa-icon [icon]="faStoreAlt"></fa-icon>
+                </div>
+                <div class="button-subtext">
+                    (1-150 employees)
+                </div>
+            </div>
+            <div class="button-company" (click)="choice(1)">
+                <div class="button-text">
+                    Medium
+                </div>
+                <div>
+                    <fa-icon [icon]="faBuilding"></fa-icon>
+                </div>
+                <div class="button-subtext">
+                    (151-1000 employees)
+                </div>
+            </div>
+            <div class="button-company" (click)="choice(2)">
+                <div class="button-text">
+                    Large
+                </div>
+                <div>
+                    <fa-icon [icon]="faCity"></fa-icon>
+                </div>
+                <div class="button-subtext">
+                    (1001+ employees)
+                </div>
+            </div>
+        </div>
+    </form>
 </div>

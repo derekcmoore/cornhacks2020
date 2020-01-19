@@ -14,12 +14,12 @@ import { Question4IComponent } from './components/questions/question4-i/question
 import { Question5IComponent } from './components/questions/question5-i/question5-i.component';
 import { Question6IComponent } from './components/questions/question6-i/question6-i.component';
 import { Question7IComponent } from './components/questions/question7-i/question7-i.component';
-import { Question8IComponent } from './components/questions/question8-i/question8-i.component';
-import { Question9IComponent } from './components/questions/question9-i/question9-i.component';
-import { Question10IComponent } from './components/questions/question10-i/question10-i.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {HttpClientModule} from "@angular/common/http";
-import { SearchComponent } from './pages/search/search.component';
+import { SearchComponent } from '../pages/search/search.component';
+import { Question8IComponent } from './components/questions/question8-i/question8-i.component';
+import { FormsModule } from '@angular/forms';
+import { SurveyResultsComponent } from './pages/survey-results/survey-results.component';
 
 @NgModule({
   declarations: [
@@ -35,9 +35,7 @@ import { SearchComponent } from './pages/search/search.component';
     Question6IComponent,
     Question7IComponent,
     Question8IComponent,
-    Question9IComponent,
-    Question10IComponent,
-    SearchComponent,
+    SurveyResultsComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +43,8 @@ import { SearchComponent } from './pages/search/search.component';
     AppRoutingModule,
     ClarityModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
