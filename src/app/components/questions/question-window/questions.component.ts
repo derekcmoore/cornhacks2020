@@ -17,7 +17,7 @@ export class QuestionsComponent implements OnInit {
   nextButton = false;
   constructor(private questionsService: QuestionsService, private router: Router) { }
   ngOnInit() {
-    
+    this.questionsService.questionNumber = 0;
   }
 
   addQuestionNumber() {

@@ -34,12 +34,13 @@ export class SurveyResultsComponent implements OnInit {
     let kwhToCO2 = 0.000707; //AVERT, U.S. national weighted average CO2 marginal emission rate, year 2018 data
     let months = 12;
     let tonsToPounds = 2204.62;
-    return this.questionsService.answers['q8'] * kwhToCO2 * months * tonsToPounds;
+    return hours * kwhToCO2 * months * tonsToPounds;
   }
 
   calculateComputerEnergy() {
     let averageComputerConsumtion = 125;
-    this.runningComputers = averageComputerConsumtion * this.size;
+    this.runningComputers = averageComputerConsumtion * this.size / 1000;
+    return this.calculateCO2Emissions(this.runningComputers);
   }
 
 }
