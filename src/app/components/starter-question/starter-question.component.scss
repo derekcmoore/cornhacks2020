@@ -1,5 +1,9 @@
 @import "../../app.component.scss";
 
+#user-type-selection {
+    display: inline-flex;
+}
+
 .button-primary {
     min-width: 2em;
     max-width: 10em;
@@ -9,15 +13,29 @@
     padding-top: 0.5em;
     max-height: 10em;
     font-size: 40px;
-    background-color: $secondary-color !important;
-    border: 1px solid $secondary-color !important;
-    border-radius: 0.3em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
     margin: 0.5em;
     outline: none !important;
-    color: white;
+    color: var(--primary-default);
+    background-color: white !important;
+    border: 3px solid var(--primary-default) !important;
+    transition: .5s ease-in-out all;
+    opacity: 65%;
 }
 
-.button-primary:active{
-    background-color: #ffb648 !important;
-    border: 1px solid #ffb648 !important;
+.button-primary div{
+    margin: 1em;
+}
+
+fa-icon {
+    font-size: 3em;
+}
+
+.button-primary:hover {
+    background-color: var(--primary-default) !important;
+    border: 1px solid var(--primary-default) !important;
+    color: white;
+
 }

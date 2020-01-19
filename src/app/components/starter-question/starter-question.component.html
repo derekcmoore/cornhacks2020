@@ -1,9 +1,26 @@
 <div class="question-box">
     <div>
-        <button class="button-primary">Individual</button>
-        <button class="button-primary">Business</button>
+        <h2></h2>
     </div>
-    <div class="question-progress">
+    <div id="user-type-selection">
+        <div class="button-primary">
+            <div>
+                Individual
+            </div>
+            <div>
+                <fa-icon [icon]="faUser"></fa-icon>
+            </div>
+        </div>
+        <div class="button-primary">
+            <div>
+                Business
+            </div>
+            <div>
+                <fa-icon [icon]="faBuilding"></fa-icon>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="question-progress">
         <ul class="clr-timeline clr-timeline-horizontal">
             <li class="clr-timeline-step disabled">
                 <clr-icon shape="circle" aria-label="Not started"></clr-icon>
@@ -29,5 +46,5 @@
                 <clr-icon shape="error-standard" aria-label="Error"></clr-icon>
             </li>
         </ul>
-    </div>
+    </div> -->
 </div>
