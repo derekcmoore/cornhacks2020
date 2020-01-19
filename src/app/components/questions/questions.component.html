@@ -11,6 +11,47 @@
 
     <div *ngIf="questionNumber != 0 && isBusiness" class="question-box">
         <div>
+
+        </div>
+        <div class="question-progress">
+            <button (click)="subtractQuestionNumber()">back</button>
+            <ul class="clr-timeline clr-timeline-horizontal">
+                <li class="clr-timeline-step">
+                    <clr-icon *ngIf="questionNumber == 1" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 1" shape="circle"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step">
+                    <clr-icon *ngIf="questionNumber == 2" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 2" shape="circle"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step">
+                    <clr-icon *ngIf="questionNumber == 3" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 3" shape="circle"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step">
+                    <clr-icon *ngIf="questionNumber == 4" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 4" shape="circle"></clr-icon>
+                    <div class="clr-timeline-step-body">
+                    </div>
+                </li>
+                <li class="clr-timeline-step">
+                    <clr-icon *ngIf="questionNumber == 5" shape="dot-circle"></clr-icon>
+                    <clr-icon *ngIf="questionNumber != 5" shape="circle"></clr-icon>
+                </li>
+            </ul>
+            <button (click)="addQuestionNumber()">next</button>
+        </div>
+    </div>
+
+    <div *ngIf="questionNumber != 0 && isBusiness" class="question-box">
+        <div>
+
         </div>
         <div class="question-progress">
             <button (click)="subtractQuestionNumber()">back</button>
