@@ -1,5 +1,11 @@
 @import '../../app.component.scss';
 
+.lightbulb {
+    font-size: 5em;
+    color: $primary-color;
+    margin: 0em auto;
+}
+
 .title {
     padding: 4em;
 }
