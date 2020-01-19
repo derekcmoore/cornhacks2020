@@ -10,10 +10,6 @@ export class SearchComponent implements OnInit {
 
   urll = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyDD1xdeorc23ZIQWrapk8OF-XMo-aBmfR8&cx=007751619407156972941:todaeusxax4&q=';
 
-  httpOptions = {
-    headers: new HttpHeaders({ "Content-Type": "application/json", "Authorization": "c31z" })
-  };
-
   items = null;
 
   searchText = '';
@@ -21,14 +17,14 @@ export class SearchComponent implements OnInit {
   constructor(private http: HttpClient) {
   }
 
-  ngOnInit() {
-    this.showResults();
-  }
+  ngOnInit() {}
 
-  showResults(){
-    this.http.get(this.urll+"economically+friendly+"+this.searchText.replace(' ', '+')).subscribe(x => {
-      this.items = x['items'];
-    });
+  showResults(event){
+    if(event.key === "Enter") {
+      this.http.get(this.urll+"economically+friendly+"+this.searchText.replace(' ', '+')).subscribe(x => {
+        this.items = x['items'];
+      });
+    }
   }
 
 }

@@ -1,6 +1,6 @@
 
 
-<input placeholder="Search" [(ngModel)]="searchText" (keyup)="showResults()"/>
+<input placeholder="Search" [(ngModel)]="searchText" (keyup)="showResults($event)"/>
 
 <p *ngFor="let item of items">
   <a [href]="item.link">
