@@ -18,10 +18,13 @@ import { Question8IComponent } from './components/questions/question8-i/question
 import { Question9IComponent } from './components/questions/question9-i/question9-i.component';
 import { Question10IComponent } from './components/questions/question10-i/question10-i.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {HttpClientModule} from "@angular/common/http";
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SearchComponent,
     QuestionnaireComponent,
     QuestionsComponent,
     Question1IComponent,
@@ -34,9 +37,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     Question8IComponent,
     Question9IComponent,
     Question10IComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     ClarityModule,
     BrowserAnimationsModule,
