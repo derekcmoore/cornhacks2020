@@ -32,7 +32,7 @@ export const light: Theme = {
         "--error-default": "#EF3E36",
         "--error-dark": "#800600",
         "--error-light": "#FFCECC",
-
+        "--background-image": "url('../../../assets/images/beanstalk.png')",
         "--background-tertiary-shadow": "0 1px 3px 0 rgba(92, 125, 153, 0.5)"
     }
 };
@@ -40,7 +40,7 @@ export const light: Theme = {
 export const dark: Theme = {
     name: "dark",
     properties: {
-        "--foreground-default": "#5C7D99",
+        "--foreground-default": "#ffffff",
         "--foreground-secondary": "#A3B9CC",
         "--foreground-tertiary": "#F4FAFF",
         "--foreground-quaternary": "#E5E5E5",
@@ -67,6 +67,7 @@ export const dark: Theme = {
         "--error-dark": "#800600",
         "--error-light": "#FFCECC",
 
+        "--background-image": "url('../../../assets/images/beanstalk-dark.png')",
         "--background-tertiary-shadow": "0 1px 3px 0 rgba(8, 9, 10, 0.5)"
     }
 };

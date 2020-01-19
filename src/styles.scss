@@ -6,11 +6,11 @@
 //       format("woff"),
 //     url("./assets/fonts/Fontfabric\ -\ Noah\ Regular.otf") format("opentype");
 // }
-
+$background-image: var(--background-image);
 html,
 body {
   color: var(--foreground-default);
   background-color: var(--background-default);
   height: 100vh;
-  background: url("../src/assets/images/beanstalk.png");
+  background: $background-image;
 }

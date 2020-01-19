@@ -2,8 +2,9 @@ $primary-color: var(--primary-default);
 $secondary-color: var(--secondary-default);
 $tertiary-color: var(--tertiary-default);
 $question-background: var(--background-default);
+$background-image: var(--background-image);
+$foreground-default: var(--foreground-default);
 $primary-font: 'Overpass', sans-serif;
-
 
 .question {
   padding-bottom: 2em;
