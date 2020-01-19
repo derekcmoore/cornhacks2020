@@ -1,47 +1,67 @@
 @import "../../../app.component.scss";
 
 #user-type-selection {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .button-primary {
-    min-width: 2em;
-    max-width: 15em;
-    max-height: 10em;
-    font-size: 28px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    display: block;
-    margin: 0.5em;
-    outline: none !important;
-    color: $primary-color;
-    background-color: white !important;
-    border: 3px solid $primary-color !important;
-    transition: .5s ease-in-out all;
-    opacity: 65%;
-    cursor: pointer;
+  min-width: 2em;
+  max-width: 15em;
+  max-height: 10em;
+  font-size: 28px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  margin: 0.5em;
+  outline: none !important;
+  color: $primary-color;
+  background-color: white !important;
+  border: 3px solid $primary-color !important;
+  transition: 0.5s ease-in-out all;
+  opacity: 65%;
+  cursor: pointer;
 }
 
 .button-text {
-    line-height: normal;
-    padding: 0.3em;
+  line-height: normal;
+  padding: 0.3em;
 }
 
-.button-primary div{
-    margin: 1em;
+.button-primary div {
+  margin: 1em;
 }
 
 fa-icon {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 .button-primary:hover {
-    background-color: var(--primary-default) !important;
-    border: 1px solid var(--primary-default) !important;
-    color: white;
-
+  background-color: var(--primary-default) !important;
+  border: 1px solid var(--primary-default) !important;
+  color: white;
 }
 
-.clr-timeline-step{
-    cursor: pointer;
+.clr-timeline-step {
+  cursor: pointer;
+}
+
+.nav-button {
+  margin-top: 0.75em;
+  max-width: 8em;
+  max-height: 4em;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  text-align: center;
+  outline: none !important;
+  border: none;
+  background: none;
+  color: $primary-color;
+  transition: 0.5s ease-in-out all;
+  opacity: 65%;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  color: $primary-color;
 }

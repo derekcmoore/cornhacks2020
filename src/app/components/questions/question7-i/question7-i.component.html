@@ -1,1 +1,14 @@
-<p>question7-i works!</p>
+<div>
+    <div class="question">
+        How many trash bags do you use per week?
+    </div>
+    <form>
+        <div>
+            <input type="range" min="0" max="150" value="1" class="slider" id="myRange" (input)="valueChanged($event.target.value)">
+            <div style="margin-top: 0.5em;">
+                <span>Number of Bags: &nbsp;</span>
+                <span style="font-weight: 400;">{{this.questionsService.answers['q7']}}</span>
+            </div>
+        </div>
+    </form>
+</div>

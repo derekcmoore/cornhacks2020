@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionsService } from 'src/app/services/questions/questions.service';
 
 @Component({
   selector: 'app-question8-i',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Question8IComponent implements OnInit {
 
-  constructor() { }
+  constructor(private questionsService: QuestionsService) { }
 
+  hours: number = 0;
   ngOnInit() {
+
   }
 
+  choice(value: number) {
+
+  }
 }

@@ -46,7 +46,7 @@ export const dark: Theme = {
         "--foreground-quaternary": "#E5E5E5",
         "--foreground-light": "#FFFFFF",
 
-        "--background-default": "#0e0e0f",
+        "--background-default": "#0e0e0f88",
         "--background-secondary": "#41474D",
         "--background-tertiary": "#08090A",
         "--background-light": "#41474D",
