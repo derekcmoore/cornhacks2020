@@ -138,7 +138,7 @@
                     </div>
                 </li>
             </ul>
-            <button (click)="addQuestionNumber()" [style.opacity]="questionsService.questionNumber > 1 ? '65%' : '0%'"
+            <button (click)="checkAnswers() ? router.navigate(['/results']) : addQuestionNumber()" [style.opacity]="questionsService.questionNumber > 1 ? '65%' : '0%'"
                 [style.cursor]="questionsService.questionNumber > 1 ? 'pointer' : 'auto'"
                 [ngClass]="{disabled : questionsService.questionNumber < 1}" class="nav-button">
                 <fa-icon [icon]="faArrowRight"></fa-icon>
