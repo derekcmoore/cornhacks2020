@@ -1,1 +1,10 @@
-<p>search works!</p>
+
+
+<input placeholder="Search" [(ngModel)]="searchText" (keyup)="showResults()"/>
+
+<p *ngFor="let item of items">
+  <a [href]="item.link">
+    <img [src]="item.pagemap.scraped ? item.pagemap.scraped[0].image_link : '/assets/images/beanstalk.png'" height="100px"/>
+    {{item.title}}
+  </a>
+</p>
