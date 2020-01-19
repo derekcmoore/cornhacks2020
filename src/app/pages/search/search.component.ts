@@ -8,7 +8,7 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 })
 export class SearchComponent implements OnInit {
 
-  urll = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyDD1xdeorc23ZIQWrapk8OF-XMo-aBmfR8&cx=007751619407156972941:todaeusxax4&q=';
+  urll = 'https://www.googleapis.com/customsearch/v1/siterestrict?key=AIzaSyDD1xdeorc23ZIQWrapk8OF-XMo-aBmfR8&cx=007751619407156972941:todaeusxax4&q=';
 
   items = null;
 
