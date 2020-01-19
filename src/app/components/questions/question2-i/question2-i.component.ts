@@ -16,10 +16,10 @@ export class Question2IComponent implements OnInit {
 
   choice(value: number) {
     if (value == 0) {
-      this.questionsService.answers['q2'] = "No";
+      this.questionsService.answers['q2'] = 'No';
     }
     else {
-      this.questionsService.answers['q2'] = "Yes";
+      this.questionsService.answers['q2'] = 'Yes';
     }
   }
 }
