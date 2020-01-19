@@ -17,6 +17,7 @@ import { Question7IComponent } from './components/questions/question7-i/question
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Question8IComponent } from './components/questions/question8-i/question8-i.component';
 import { FormsModule } from '@angular/forms';
+import { SurveyResultsComponent } from './pages/survey-results/survey-results.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     Question5IComponent,
     Question6IComponent,
     Question7IComponent,
-    Question8IComponent
+    Question8IComponent,
+    SurveyResultsComponent
   ],
   imports: [
     BrowserModule,

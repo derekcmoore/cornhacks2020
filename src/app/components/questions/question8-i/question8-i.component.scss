@@ -2,5 +2,9 @@
 
 .clr-input:not([readonly]).clr-focus,
 .clr-input:not([readonly]):focus {
-  border-bottom: 1px solid $primary-color;
+  border-bottom: 1px solid $primary-color !important;
+}
+
+.clr-input {
+  color: $foreground-default;
 }
