@@ -1,1 +1,32 @@
-<p>{{calculateCO2Emissions()}}</p>
+<div class="pt-1 mx-2">
+    <div class="main-fact">
+        <h2>Based off of your current energy consumption you produced</h2>
+        <h1 class="total">{{calculateCO2Emissions()}} pounds of CO2</h1>
+    </div>
+    <div class="side-fact" *ngIf="this.questionsService.answers['q2'] == 'yes'">
+        <div>
+            The average computer takes up an estimated 125 watts per hour while idling. If all computers were turned off
+            before leaving the office, you could reduce your carbon emmissions by
+        </div>
+        <div class="saved mb-1">
+            {{calculateComputerEnergy()}} pounds of CO2
+        </div>
+    </div>
+    <div>
+        Your Company is above average in energy consumtion for the Lincoln area, which is ranked the 36th greenest city
+        in the United States, just ahead of Jersey City, NJ. If you work hard to improve your company's impact, you
+        could help push your city past Scottsdale, AZ!
+    </div>
+</div>
+
+<div class="pt-2 mx-2">
+    <h3>Tips and Tricks</h3>
+    <div>
+        According to the Department of Energy, sealing leaks and cracks in your business can cut up to 20% off the costs
+        of your heating and cooling bills. Many states will perform free energy audits, and will pay for some or all of
+        the repairs!
+        <button class="nav-button float-right" routerLink="/home">
+            <fa-icon [icon]="faArrowLeft"></fa-icon>
+        </button>
+    </div>
+</div>

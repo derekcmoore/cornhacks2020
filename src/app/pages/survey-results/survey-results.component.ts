@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { QuestionsService } from 'src/app/services/questions/questions.service';
+import { ThemeService } from 'src/app/services/theme/theme.service';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-survey-results',
@@ -7,19 +9,20 @@ import { QuestionsService } from 'src/app/services/questions/questions.service';
   styleUrls: ['./survey-results.component.scss']
 })
 export class SurveyResultsComponent implements OnInit {
-
+  faArrowLeft = faArrowLeft;
   runningComputers: number = 0;
   size: number = 0;
-  constructor(private questionsService: QuestionsService) { }
+  constructor(private questionsService: QuestionsService, private themeService: ThemeService) { }
   ngOnInit() {
     this.getSize();
+    this.themeService.setLightTheme();
   }
 
   getSize() {
     if (this.questionsService.answers['q8'] == "small") {
       this.size = 75;
     }
-    else if (this.questionsService.answers['q8'] == "small") {
+    else if (this.questionsService.answers['q8'] == "medium") {
       this.size = 500;
     }
     else {
