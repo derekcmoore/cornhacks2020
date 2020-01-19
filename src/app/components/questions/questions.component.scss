@@ -18,11 +18,12 @@
     display: block;
     margin: 0.5em;
     outline: none !important;
-    color: var(--primary-default);
+    color: $primary-color;
     background-color: white !important;
-    border: 3px solid var(--primary-default) !important;
+    border: 3px solid $primary-color !important;
     transition: .5s ease-in-out all;
     opacity: 65%;
+    cursor: pointer;
 }
 
 .button-primary div{
@@ -38,4 +39,8 @@ fa-icon {
     border: 1px solid var(--primary-default) !important;
     color: white;
 
+}
+
+.clr-timeline-step{
+    cursor: pointer;
 }

@@ -13,13 +13,21 @@ export const light: Theme = {
         "--foreground-light": "#41474D",
 
         "--background-default": "#F4FAFF",
-        "--background-secondary": "#A3B9CC",
+        "--background-secondary": "#dbdbdb75",
         "--background-tertiary": "#5C7D99",
         "--background-light": "#FFFFFF",
 
         "--primary-default": "#32a852",
         "--primary-dark": "#24B286",
         "--primary-light": "#B2FFE7",
+
+        "--secondary-default": "#ff9900",
+        "--secondary-dark": "#ff9900",
+        "--secondary-light": "#ff9900",
+
+        "--tertiary-default": "#ffff00",
+        "--tertiary-dark": "#ffff00",
+        "--tertiary-light": "#ffff00",
 
         "--error-default": "#EF3E36",
         "--error-dark": "#800600",
@@ -43,9 +51,17 @@ export const dark: Theme = {
         "--background-tertiary": "#08090A",
         "--background-light": "#41474D",
 
-        "--primary-default": "#5DFDCB",
-        "--primary-dark": "#24B286",
-        "--primary-light": "#B2FFE7",
+        "--primary-default": "#33cc33",
+        "--primary-dark": "#33cc33",
+        "--primary-light": "#33cc33",
+
+        "--secondary-default": "#ff9900",
+        "--secondary-dark": "#ff9900",
+        "--secondary-light": "#ff9900",
+
+        "--tertiary-default": "#ffff00",
+        "--tertiary-dark": "#ffff00",
+        "--tertiary-light": "#ffff00",
 
         "--error-default": "#EF3E36",
         "--error-dark": "#800600",

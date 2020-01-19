@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeService } from "../../theme.service";
-import { StarterQuestionComponent } from '../../components/starter-question/starter-question.component'
+import { QuestionsComponent } from '../../components/questions/questions.component'
+import { ThemeService } from 'src/app/services/theme/theme.service';
 @Component({
   selector: 'app-questionnaire',
   templateUrl: './questionnaire.component.html',
@@ -13,7 +13,7 @@ export class QuestionnaireComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
+    this.themeService.setLightTheme();
   }
 
   toggleTheme() {

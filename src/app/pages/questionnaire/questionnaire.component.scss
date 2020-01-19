@@ -1,3 +1,5 @@
+@import '../../app.component.scss';
+
 .title {
     padding: 4em;
 }
@@ -10,5 +12,5 @@
 }
 
 #cost{
-    border-bottom: 5px solid green;
+    border-bottom: 5px solid $primary-color;
 }

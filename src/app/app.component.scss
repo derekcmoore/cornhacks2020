@@ -1,19 +1,57 @@
-$primary-color: #33cc33;
-$secondary-color: #ff9900;
-$tertiary-color: #ffff00;
+$primary-color: var(--primary-default);
+$secondary-color: var(--secondary-default);
+$tertiary-color: var(--tertiary-default);
+$question-background: var(--background-secondary);
+
+.question {
+  padding-bottom: 2em;
+  font-family: "Noah";
+  color: black;
+  font-size: 50px;
+}
 
 .question-box {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40em;
+  height: 68%;
+  background-color: $question-background;  
+  margin-left: 5em;
+  margin-right: 5em;
+  border-radius: 0.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-align: center;
 }
+
+.center-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 68%;
+  margin-left: 5em;
+  margin-right: 5em;
+  border-radius: 0.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
 
 .question-progress {
   position: absolute;
   bottom: 0;
   vertical-align: bottom;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.progress-color {
+  fill: $secondary-color;
 }
 
 .clr-timeline-step {

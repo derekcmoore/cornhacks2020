@@ -1,17 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-@font-face {
-    font-family: 'Noah';
-    src: 
-        url("./assets/fonts/fontfabric_-_noah_regular-webfont.woff") format("woff"),
-        url("./assets/fonts/Fontfabric\ -\ Noah\ Regular.otf") format("opentype"),
-}
 
-html {
-    color: var(--foreground-default);
-    background-color: var(--background-default);
-}
+// @font-face {
+//   font-family: "Noah";
+//   src: url("./assets/fonts/fontfabric_-_noah_regular-webfont.woff")
+//       format("woff"),
+//     url("./assets/fonts/Fontfabric\ -\ Noah\ Regular.otf") format("opentype");
+// }
 
+html,
 body {
-    margin: 2em;
-    background: url("../src/assets/images/beanstalk.png");
+  color: var(--foreground-default);
+  background-color: var(--background-default);
+  height: 100vh;
+  background: url("../src/assets/images/beanstalk.png");
 }
