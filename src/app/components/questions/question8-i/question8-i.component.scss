@@ -1,1 +1,6 @@
 @import "../../../app.component.scss";
+
+.clr-input:not([readonly]).clr-focus,
+.clr-input:not([readonly]):focus {
+  border-bottom: 1px solid $primary-color;
+}

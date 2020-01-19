@@ -16,6 +16,7 @@ import { Question6IComponent } from './components/questions/question6-i/question
 import { Question7IComponent } from './components/questions/question7-i/question7-i.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Question8IComponent } from './components/questions/question8-i/question8-i.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { Question8IComponent } from './components/questions/question8-i/question
     AppRoutingModule,
     ClarityModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
