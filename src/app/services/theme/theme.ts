@@ -18,8 +18,8 @@ export const light: Theme = {
         "--background-light": "#FFFFFF",
 
         "--primary-default": "#32a852",
-        "--primary-dark": "#24B286",
-        "--primary-light": "#B2FFE7",
+        "--primary-dark": "#32a852",
+        "--primary-light": "#32a852",
 
         "--secondary-default": "#ff9900",
         "--secondary-dark": "#ff9900",
@@ -32,7 +32,7 @@ export const light: Theme = {
         "--error-default": "#EF3E36",
         "--error-dark": "#800600",
         "--error-light": "#FFCECC",
-
+        "--background-image": "url('../../../assets/images/beanstalk.png')",
         "--background-tertiary-shadow": "0 1px 3px 0 rgba(92, 125, 153, 0.5)"
     }
 };
@@ -40,20 +40,20 @@ export const light: Theme = {
 export const dark: Theme = {
     name: "dark",
     properties: {
-        "--foreground-default": "#5C7D99",
+        "--foreground-default": "#ffffff",
         "--foreground-secondary": "#A3B9CC",
         "--foreground-tertiary": "#F4FAFF",
         "--foreground-quaternary": "#E5E5E5",
         "--foreground-light": "#FFFFFF",
 
-        "--background-default": "#797C80",
+        "--background-default": "#0e0e0f",
         "--background-secondary": "#41474D",
         "--background-tertiary": "#08090A",
         "--background-light": "#41474D",
 
-        "--primary-default": "#33cc33",
-        "--primary-dark": "#33cc33",
-        "--primary-light": "#33cc33",
+        "--primary-default": "#32a852",
+        "--primary-dark": "#32a852",
+        "--primary-light": "#32a852",
 
         "--secondary-default": "#ff9900",
         "--secondary-dark": "#ff9900",
@@ -67,6 +67,7 @@ export const dark: Theme = {
         "--error-dark": "#800600",
         "--error-light": "#FFCECC",
 
+        "--background-image": "url('../../../assets/images/beanstalk-dark.png')",
         "--background-tertiary-shadow": "0 1px 3px 0 rgba(8, 9, 10, 0.5)"
     }
 };

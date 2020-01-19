@@ -1,13 +1,16 @@
 $primary-color: var(--primary-default);
 $secondary-color: var(--secondary-default);
 $tertiary-color: var(--tertiary-default);
-$question-background: var(--background-secondary);
+$question-background: var(--background-default);
+$background-image: var(--background-image);
+$foreground-default: var(--foreground-default);
+$primary-font: 'Overpass', sans-serif;
 
 .question {
   padding-bottom: 1em;
   line-height: normal;
   font-family: "Open Sans", sans-serif;
-  color: black;
+  color: $foreground-default;
   font-size: 50px;
 }
 
@@ -22,7 +25,7 @@ $question-background: var(--background-secondary);
   margin-left: 5em;
   margin-right: 5em;
   border-radius: 0.5em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: $primary-font;
   font-weight: 600;
   text-align: center;
   padding-right: 0.5em;
@@ -39,7 +42,7 @@ $question-background: var(--background-secondary);
   margin-left: 5em;
   margin-right: 5em;
   border-radius: 0.5em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: $primary-font;
   font-weight: 600;
   text-align: center;
 }
