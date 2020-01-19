@@ -17,7 +17,7 @@ export const light: Theme = {
         "--background-tertiary": "#5C7D99",
         "--background-light": "#FFFFFF",
 
-        "--primary-default": "#5DFDCB",
+        "--primary-default": "#32a852",
         "--primary-dark": "#24B286",
         "--primary-light": "#B2FFE7",
 

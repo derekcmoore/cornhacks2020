@@ -1,0 +1,23 @@
+$primary-color: #33cc33;
+$secondary-color: #ff9900;
+$tertiary-color: #ffff00;
+
+.question-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40em;
+}
+
+.question-progress {
+  position: absolute;
+  bottom: 0;
+  vertical-align: bottom;
+}
+
+.clr-timeline-step {
+  min-width: 1em;
+  max-width: 7em;
+  width: 100%;
+}
