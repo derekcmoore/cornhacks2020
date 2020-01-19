@@ -6,6 +6,11 @@ body {
     overflow-y: scroll;
 }
 
+#title {
+    text-align: center;
+    font-family: $primary-font;
+}
+
 .search-bar {
     margin: 100px;
     background-color: transparent;
